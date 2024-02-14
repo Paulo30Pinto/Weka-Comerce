@@ -1,0 +1,128 @@
+.nome-pre{
+  position: absolute;
+  width: 100%;
+  height: 82%;
+  background-color: rgba(63, 116, 196,.6) !important;
+  border-radius: 25px;
+  text-align: center;
+  color: #fafafa;
+  display: none;
+}
+
+#services .box:hover .nome-pre{
+  display: block;
+}
+#stoque #container{
+  height: 600px;
+margin: 0 auto;
+display: grid;
+grid-template-rows: 500px 100px;
+grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
+align-items: center;
+justify-items: center;
+position: relative;
+
+}
+
+#stoque #carousel {
+grid-row: 1 / 2;
+grid-column: 1 / 8;
+width: 100%;
+height: 500px;
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+transform-style: preserve-3d;
+perspective: 600px;
+--items: 5;
+--middle: 3;
+--position: 1;
+pointer-events: none;
+}
+
+#stoque div.item {
+position: absolute;
+width: 300px;
+height: 400px;
+/* background-color: coral; */
+--r: calc(var(--position) - var(--offset));
+--abs: max(calc(var(--r) * -1), var(--r));
+transition: all 0.25s linear;
+transform: rotateY(calc(-10deg * var(--r)))
+translateX(calc(-300px * var(--r)));
+z-index: calc((var(--position) - var(--abs)));
+border-radius: 15px;
+}
+
+#stoque div.item:nth-of-type(1) {
+--offset: 1;
+background: url(../img/services/pic3.jpg) no-repeat;
+background-size: 100% 100%;
+/* background-color: #90f1ef; */
+}
+#stoque div.item:nth-of-type(2) {
+--offset: 2;
+background: url(../img/services/fatos7.jpg) no-repeat;
+background-size: 100% 100%;
+/* background-color: #111; */
+}
+#stoque div.item:nth-of-type(3) {
+--offset: 3;
+background: url(../img/services/sacolas-de-compras.jpg) no-repeat;
+background-size: 100% 100%;
+/* background-color: #ff9770; */
+}
+div.item:nth-of-type(4) {
+--offset: 4;
+/*  background-color: #ffd670; */
+background: url(../img/services/acessorios-nas-maos.jpg) no-repeat;
+background-size: 100% 100%;
+}
+#stoque div.item:nth-of-type(5) {
+--offset: 5;
+
+background: url(../img/services/pic8.jpg) no-repeat;
+background-size: 100% 100%;
+/* background-color: #e9ff70; */
+}
+
+#stoque input:nth-of-type(1) {
+grid-column: 2 / 3;
+grid-row: 2 / 3;
+}
+#stoque input:nth-of-type(1):checked ~ main#carousel {
+--position: 1;
+}
+
+#stoque input:nth-of-type(2) {
+grid-column: 3 / 4;
+grid-row: 2 / 3;
+}
+#stoque input:nth-of-type(2):checked ~ main#carousel {
+--position: 2;
+}
+
+#stoque input:nth-of-type(3) {
+grid-column: 4 /5;
+grid-row: 2 / 3;
+}
+#stoque input:nth-of-type(3):checked ~ main#carousel {
+--position: 3;
+}
+
+#stoque input:nth-of-type(4) {
+grid-column: 5 / 6;
+grid-row: 2 / 3;
+}
+#stoque input:nth-of-type(4):checked ~ main#carousel {
+--position: 4;
+}
+
+#stoque input:nth-of-type(5) {
+grid-column: 6 / 7;
+grid-row: 2 / 3;
+}
+#stoque input:nth-of-type(5):checked ~ main#carousel {
+--position: 5;
+}

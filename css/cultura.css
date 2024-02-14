@@ -1,0 +1,102 @@
+#poesia img{
+    width: 100%;
+    height: 25em;
+    border-radius: 25px;
+}
+.destaques img{
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 100% !important;
+}
+.destaques{
+    padding-top: 5em;
+    
+}
+
+#poesia small{
+    font-size: 14px;
+}
+#noticia .load{
+  width: 90%;
+  height: 200px;  
+/*  border: solid 1px red; */
+  border-radius: 10px;
+    position: relative;
+}
+
+#noticia .load:nth-child(1){
+    background: url("../img/gif5.GIF") no-repeat !important;
+    background-size: 100% 100% !important;
+    background-position: center center;
+    background-attachment: fixed;
+}
+#noticia .load:nth-child(2){
+    background: url("../img/gif2.GIF") no-repeat !important;
+    background-size: cover !important;
+    background-position: center center;
+    background-attachment: fixed;
+}
+#noticia .load:nth-child(3){
+    background: url("../img/gif1.GIF") no-repeat !important;
+    background-size: cover !important;
+    background-position: center center;
+    background-attachment: fixed;
+}
+#noticia .btn-play{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+  }
+
+#noticia .outros{
+    width: 100px;
+    height: 50px;  
+  /*  border: solid 1px red; */
+    border-radius: 15px; 
+    margin-right: 10px;
+  }
+  #noticia .outros:nth-child(1){
+    background: url("../img/1.jpg") no-repeat !important;
+    background-size: 100% 100% !important;
+    background-position: center center;
+    background-attachment: fixed;
+}
+#noticia .outros:nth-child(2){
+    background: url("../img/2.jpg") no-repeat !important;
+    background-size: cover !important;
+    background-position: center center;
+    background-attachment: fixed;
+}
+#noticia .outros:nth-child(3){
+    background: url("../img/cntinfo\ \(10\).jpg") no-repeat !important;
+    background-size: 100% 100% !important;
+    background-position: center center;
+    background-attachment: fixed;
+}
+#noticia .outros:nth-child(4){
+    background: url("../img/cnt0.JPG") no-repeat !important;
+    background-size: 100% 100% !important;
+    background-position: center center;
+    background-attachment: fixed;
+}
+#noticia .outros:nth-child(5){
+    background: url("../img/cnt1.JPG") no-repeat !important;
+    background-size: cover !important;
+    background-position: center center;
+    background-attachment: fixed;
+}
+#noticia .outros:nth-child(6){
+    background: url("../img/cnt2.JPG") no-repeat !important;
+    background-size: 100% 100% !important;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.list-group img{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    border: solid 1px black;
+}
+
+

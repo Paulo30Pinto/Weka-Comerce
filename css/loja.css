@@ -1,0 +1,44 @@
+#loja li{
+/*  border:solid 2px red; */
+  background: url('../img/clients/logo.png') no-repeat;
+  background-size: cover;
+  height: 5em;
+  width: 100%;
+  margin-bottom: 1em;
+  background-position: center;
+  cursor: pointer;
+}
+
+#loja li:nth-of-type(2){
+/*  border:solid 2px red; */
+  background: url('../img/clients/kero.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#loja li:nth-of-type(3){
+/*  border:solid 2px red; */
+  background: url('../img/clients/candando.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 768px){
+  #prodLoja{
+    overflow: auto; max-height: 40rem;
+
+  }
+}
+
+@media (max-width: 768px){
+  #loja.list-group{
+    display:flex;
+    flex-direction:row !important;
+    align-content: center;
+    overflow: auto !important;
+
+  }
+  #loja li{
+   min-width: 80% !important;
+   margin-right: 21px;
+  }
+}
